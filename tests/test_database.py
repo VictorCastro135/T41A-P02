@@ -50,8 +50,8 @@ def test_structure(db_connection):
             IN ('alumnos', 'maestros', 'grupos',
             'inscripciones', 'asistencia');
           '''
-    expected_tables = {'alumnos', 'maestros',
-                       'grupos', 'inscripciones',
+    expected_tables = {'alumnos', 'profesores',
+                       'grupo', 'inscripciones',
                        'asistencia'}
     with db_connection.cursor() as cur:
         cur.execute(sql)
