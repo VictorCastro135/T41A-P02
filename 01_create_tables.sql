@@ -12,7 +12,7 @@ CREATE TABLE grupo (
     id_grupo SERIAL PRIMARY KEY,
     nombre VARCHAR NOT NULL,
     periodo CHAR(4) NOT NULL,
-    clave CHAR NOT NULL,
+    clave CHAR(4) NOT NULL,
     horario TIMESTAMP NOT NULL,
     id_profesor INT NOT NULL,
     FOREIGN KEY (id_profesor) REFERENCES profesores(id_profesor)
